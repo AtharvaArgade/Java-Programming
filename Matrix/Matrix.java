@@ -1,4 +1,3 @@
-// javac Matrix.java -d .  (Command for creating the package)
 package Marvellous;
 
 import java.util.*;
