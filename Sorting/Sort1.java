@@ -9,45 +9,6 @@ class Searching extends MarvellousArray
 		super(iSize);
 	}
 
-	public boolean SearchLinear(int no)
-	{
-		int i = 0;
-		for(i = 0; i < Arr.length; i++)
-		{
-			if(Arr[i] == no)
-				break;
-		}
-
-		if(i == Arr.length)
-			return false;
-		else
-			return true;
-	}
-
-	public boolean SearchBidirectional(int no)
-	{
-		int istart = 0;
-		int iend = Arr.length-1;
-
-		while(istart <= iend)
-		{
-			if((Arr[istart] == no) || (Arr[iend] == no))
-			{
-				break;
-			}
-			istart++;
-			iend--;
-		}
-		if(istart > iend)
-		{
-			return false;
-		}
-		else
-		{
-			return true;
-		}
-	}
-
 	public boolean CheckSorted() // Increasing order
 	{
 		int i = 0;
