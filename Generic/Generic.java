@@ -4,11 +4,6 @@ class Demo
 	public static void Display(Integer arr[])
 	{
 		System.out.println("Elements of array are :");
-		
-		/* for( int i=0;i<arr.length;i++)   we can also write like this
-		{
-			System.out.println(arr[i]);
-		}*/
 
 		for(int i : arr)     // for each loop
 		{
