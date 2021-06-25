@@ -1,4 +1,4 @@
-
+// Jagged Arrays
 
 import java.lang.*;
 import java.util.Scanner;
@@ -15,34 +15,3 @@ class Jagged
 	}
 }
 
-
-/* in c
-
-#include<stdio.h>
-#include<stdlib.h>
-
-int main()
-{
-	int **arr=NULL;
-	int row=0, col=0;
-	print("Enter no of rows and column");
-	scanf("%d%d",&row,&col);
-
-	arr=(int**)malloc(sizeof(int*)*row);
-	for(int i=0;i<row;i++)
-	{
-		arr[i]=(int*)malloc(sizeof(int)*col);
-	}
-	for(i=0;i<row;i++)
-	{
-		for(j=0;j<col;j++)
-		{
-			scanf("%d",&arr[i][j];
-		}
-	}
-	return o;
-}
-
-
-
-*/
