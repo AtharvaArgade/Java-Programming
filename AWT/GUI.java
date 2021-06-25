@@ -21,7 +21,7 @@ class FirstWindow
 	public Frame fobj;
 	public FirstWindow()
 	{
-		fobj = new Frame("Marvellous Infosystems");    // Frame is like dish
+		fobj = new Frame("Marvellous Infosystems");   
 		Button bobj1 = new Button("Login");
 		Button bobj2 = new Button("Cancel");
 
@@ -32,8 +32,6 @@ class FirstWindow
 		TextField ut = new TextField("Enter your username");
 		TextField pt = new TextField("Enter your password");
 
-// setBounds() is used to display ie set coordinates
-// (ie. window varti kute kay display karyche / Frame made kute kay thevycha )
 		lobj.setBounds(70,30,300,30);       
 		username.setBounds(20,80,80,30);
 		ut.setBounds(110,80,150,30);
@@ -41,14 +39,14 @@ class FirstWindow
 		pt.setBounds(110,120,150,30);
 		bobj1.setBounds(70,170,80,30);   // x y w h    button size
 		bobj2.setBounds(160,170,80,30);
-		fobj.add(bobj1);          // dish made button add karyche
+		fobj.add(bobj1);         
 		fobj.add(bobj2);
 		fobj.add(lobj);
 		fobj.add(username);
 		fobj.add(password);
 		fobj.add(ut);
 		fobj.add(pt);
-		fobj.setSize(350,250);   // frame size set karychi
+		fobj.setSize(350,250);  
 		fobj.setLayout(null);
 		fobj.setVisible(true);
 		fobj.addWindowListener(new MarvellousListener());
