@@ -15,31 +15,27 @@ class Iterations
 		int No = sobj.nextInt();
 		int icnt=0;
 
-		System.out.println("for loop");
-                //    1       2       3		
+		System.out.println("for loop");	
 		for(icnt=1;icnt<=No;icnt++)
 		{
-			System.out.println(icnt);    // 4
-		}             //   1  2  4  3  2  4  3  2  4  3  2  4  3  2  False
+			System.out.println(icnt);   
+		}            
  
-
 		System.out.println("while loop");
-		icnt=1;            // 1
-		while(icnt<=No)    // 2
+		icnt=1;          
+		while(icnt<=No)    
 		{
-			System.out.println(icnt);    // 4
-			icnt++;                      // 3
-		}             //   1  2  4  3  2  4  3  2  4  3  2  4  3  2  False
-
+			System.out.println(icnt);    
+			icnt++;                     
+		}            
 
 		System.out.println("do-while loop");
 		icnt=1;      // 1
 		do
 		{
-			System.out.println(icnt);     // 4
-			icnt++;                       // 3
-		}while(icnt<=No);                      // 2
-                //  1  4  3  2  4  3  2  4  3  2  4  3  2  4  3  2  False
+			System.out.println(icnt);     
+			icnt++;                      
+		}while(icnt<=No);                      
 		
 	}
 }
