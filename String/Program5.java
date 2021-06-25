@@ -1,19 +1,39 @@
+/* Write a java program which accept string from user and display it in reverse order. 
+Input : "MarvellouS"
+Output : "SuollevraM" 
+*/
+
 import java.util.*;
 
-class Program5
+class StringX
 {
-	public static void main(String arg[])
+	public String Reverse(String str)
 	{
-		Scanner sobj = new Scanner(System.in);
+		int i = 0;
+		char arr[] = str.toCharArray();
+		String str1 = "";
 
-		System.out.println("Enter the first string");
-		String str = sobj.nextLine();
-		System.out.println("String length is : "+str.length());
-		
-		String temp = str.trim();
-		String arr[] = temp.split("\\s");
-		System.out.println("Number of words are :"+arr.length);
+		for(i=arr.length-1;i>=0;i--)
+		{
+			str1 = str1+arr[i];
+		}
+		return str1;
 	}
 }
 
+class Program5
+{
+	public static void main(String args[])
+	{
+		Scanner sobj = new Scanner(System.in);
+
+		System.out.println("Enter the string");
+		String str = sobj.nextLine();
+
+		StringX obj = new StringX();
+		String sRet = obj.Reverse(str);
+
+		System.out.println(sRet);
+	}
+}
 

@@ -1,18 +1,38 @@
+/* Java program which accept string from user and count number of capital characters. 
+Input : "Marvellous Multi OS"
+Output : 4 
+*/
+
 import java.util.*;
+
+class StringX
+{
+	public int Count(String str)
+	{
+		int iCnt = 0;
+		char arr[] = str.toCharArray();
+		for(int i= 0;i<arr.length;i++)
+		{
+			if((arr[i]>='A') && (arr[i]<='Z'))
+			{
+				iCnt++;
+			}
+		}
+		return iCnt;
+	}
+}
 
 class Program1
 {
-	public static void main(String arg[])
+	public static void main(String args[])
 	{
 		Scanner sobj = new Scanner(System.in);
 
-		System.out.println("Enter the first string");
+		System.out.println("Enter the string");
 		String str = sobj.nextLine();
 
-		System.out.println("String length is : "+str.length());
-		String temp = str.trim();
-
-		System.out.println("New String is :"+temp);
-		System.out.println("Length of new string is :"+temp.length());
+		StringX obj = new StringX();
+		int iRet = obj.Count(str);
+		System.out.println("Number of capital characters are : "+iRet);
 	}
 }

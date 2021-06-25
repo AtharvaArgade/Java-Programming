@@ -1,20 +1,43 @@
+/*  Write a java program which accept string from user and return 
+difference between frequency of small characters and frequency of capital characters. 
+Input : "MarvellouS"
+Output : 6 (8-2)  */
+
+
 import java.util.*;
+
+class StringX
+{
+	public int CountDiff(String str)
+	{
+		int iCnt1 = 0, iCnt2 = 0;
+		char arr[] = str.toCharArray();
+		for(int i= 0;i<arr.length;i++)
+		{
+			if((arr[i]>='a') && (arr[i]<='z'))
+			{
+				iCnt1++;
+			}
+			else if((arr[i]>='A') && (arr[i]<='Z'))
+			{
+				iCnt2++;
+			}
+		}
+		return iCnt1-iCnt2;
+	}
+}
 
 class Program3
 {
-	public static void main(String arg[])
+	public static void main(String args[])
 	{
 		Scanner sobj = new Scanner(System.in);
 
-		System.out.println("Enter the first string");
+		System.out.println("Enter the string");
 		String str = sobj.nextLine();
-		System.out.println("String length is : "+str.length());
-		
-		String temp = str.trim();
-		System.out.println("New String is :"+temp);
-		System.out.println("Length of new string is :"+temp.length());
-	 	
-	 	String temp2 = temp.replaceAll("\\s+","");   // In '//s+' all the spaces are removed at one shot so execution time decreases 
-	 	System.out.println("Modified string is :"+temp2);
+
+		StringX obj = new StringX();
+		int iRet = obj.CountDiff(str);
+		System.out.println("Difference is : "+iRet);
 	}
 }
