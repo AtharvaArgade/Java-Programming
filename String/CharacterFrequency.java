@@ -25,7 +25,7 @@ class Demo
 }
 
 
-class Hash1
+class Program1
 {
 	public static void main(String arg[])
 	{
