@@ -15,8 +15,3 @@ class Command
 		System.out.println("Addition is :"+ret);
 	}
 }
-/*
-compile : javac Command.java
-          java Command 10 20
-Output  : Addition is :30
-*/
