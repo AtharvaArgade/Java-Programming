@@ -9,27 +9,27 @@ class Sorting extends MarvellousArrayX
 		super(isize);
 	}
 
-	public void Selection_Sort()
+	public void Insertion_Sort()
 	{
-		int i, j, index, temp;
-		index = 0;
+		int i, j, key;
 
-		for(i = 0;i < Arr.length;i++)
+		for(i=1;i<Arr.length;i++)
 		{
-			index = i;
-			for(j = i;j < Arr.length;j++)
+			key = Arr[i];
+			j = i-1;
+
+			while((j>=0) && (Arr[j]>key))
 			{
-				if(Arr[index] > Arr[j])
-					index = j; 
+				Arr[j+1] = Arr[j];
+				j = j-1;
 			}
-			temp = Arr[i];
-			Arr[i] = Arr[index];
-			Arr[index] = temp;
+
+			Arr[j+1] = key;
 		}
 	}
 }
 
-class Selection
+class Insertion
 {
 	public static void main(String args[])
 	{
@@ -43,7 +43,7 @@ class Selection
 		System.out.println("Elements before sorting");
 		obj.Display();
 
-		obj.Selection_Sort();
+		obj.Insertion_Sort();
 
 		System.out.println("Elements after sorting");
 		obj.Display();
