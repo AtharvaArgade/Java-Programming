@@ -1,4 +1,4 @@
-class Demo          // etends Object
+class Demo         
 {
 	public int i;
 	public int j;
@@ -9,7 +9,7 @@ class Demo          // etends Object
 		this.j=y;
 	}
 
-	public boolean equals(Demo obj)   //1       // Override
+	public boolean equals(Demo obj)      // Override
 	{
 		if((this.i==obj.i) && (this.j==obj.j))
 			return true;
@@ -17,7 +17,7 @@ class Demo          // etends Object
 			return false;
 	}
 
-	protected void finalize()      // 2
+	protected void finalize()    
 	{
 		System.out.println("Inside finalize method");
 	}
@@ -34,7 +34,7 @@ class Object1
 		{
 			System.out.println("Objects are equal");
 		}
-		System.out.println("Hashcode of obj1 is :"+obj1.hashCode());   // 3
+		System.out.println("Hashcode of obj1 is :"+obj1.hashCode());  
 		System.out.println("Hashcode of obj2 is :"+obj2.hashCode());
 
 		if(obj1.equals(obj2))
@@ -42,16 +42,16 @@ class Object1
 			System.out.println("Objects are equal");
 		}
 
-		Class ref=obj1.getClass();               // 4
+		Class ref=obj1.getClass();              
 		System.out.println("Name of our class is "+ref.getName());
 		System.out.println(obj1);
-		System.out.println(obj1.toString());		// 5
+		System.out.println(obj1.toString());		
 
 		Demo obj3 = obj1;    // object obj3 refers to obj1. In this case obj1 reference count is increased
 		 
 		obj1=null;
 		obj2=null;
-		System.gc();        // Call garbage collector explicitly.    for calling finalize method
+		System.gc();        // Call garbage collector explicitly.  
 		
 	}
 }
