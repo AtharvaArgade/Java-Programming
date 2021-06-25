@@ -21,7 +21,7 @@ class StringX
 
 		for(i = 0 ;i < arr.length; i++)
 		{
-			count1[arr[i]-'a']++;		// count1[98 - 97]++	count1[1]++
+			count1[arr[i]-'a']++;		
 			count2[brr[i]-'a']++;
 		}
 		for(i = 0; i < 26;i++)
