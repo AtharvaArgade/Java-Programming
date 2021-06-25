@@ -19,21 +19,3 @@ class Program4
 	}
 }
 
-/*
-
-Enter the first string
-   abc   xyz
-String length is : 15
-New String is :abc   xyz
-Length of new string is :9
-Modified string is :abcxyz
-
-E:\Logic Building\java\String>java Program4
-Enter the first string
-abc xyz demo
-String length is : 12
-New String is :abc xyz demo
-Length of new string is :12
-Modified string is :abc xyz demo
-
-*/
