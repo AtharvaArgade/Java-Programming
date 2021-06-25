@@ -14,26 +14,8 @@ class Program4
 		System.out.println("New String is :"+temp);
 		System.out.println("Length of new string is :"+temp.length());
 	 	
-	 	String temp2 = temp.replaceAll("\\s{2,}","");   // In '//s+' two spaces are removed at one shot. At one time one pair of space is removed 
+	 	String temp2 = temp.replaceAll("\\s{2,}","");  
 	 	System.out.println("Modified string is :"+temp2);
 	}
 }
 
-/*
-
-Enter the first string
-   abc   xyz
-String length is : 15
-New String is :abc   xyz
-Length of new string is :9
-Modified string is :abcxyz
-
-E:\Logic Building\java\String>java Program4
-Enter the first string
-abc xyz demo
-String length is : 12
-New String is :abc xyz demo
-Length of new string is :12
-Modified string is :abc xyz demo
-
-*/
