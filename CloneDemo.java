@@ -10,9 +10,6 @@ class Employee implements Cloneable
 	}
 	public Object clone() throws CloneNotSupportedException
 	{
-		// super()             to call base class constructor.
-		// System.out.println(super.no)      to call base class characteristics
-
 		return super.clone();            // to call base class method.
 	}
 }
