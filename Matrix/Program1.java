@@ -34,6 +34,6 @@ class Program1
 			System.out.println();
 		}
 
-		Arr = null;   // call the garbage collector to clean the memory
+		Arr = null; 
 	}
 }
